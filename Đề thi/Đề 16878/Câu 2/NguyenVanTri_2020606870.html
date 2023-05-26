@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:70%;
+            margin-left:15%;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .text--input{
+            display:flex;
+        }
+        .input{
+            margin-left:60px;
+            margin-top:6px;
+        }
+        .button{
+            display:flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text--input">
+            <div class="text">
+                <p>Nhập số thứ nhất:</p>
+                <p>Nhập số thứ hai:</p>
+                <p>UCLN của hai số trên là: </p>
+            </div>
+            <div class="input">
+                <input type="text" id="so1"><br><br>
+                <input type="text" id="so2"><br><br>
+                <input type="text" id="kq">
+            </div>
+        </div>
+        <div class="button">
+            <button onclick="tim()">Tìm</button>
+            <button onclick="huy()">Huy bo</button>
+        </div>
+    </div>
+    <script>
+        let so1=document.getElementById("so1");
+        let so2=document.getElementById("so2");
+        let kq=document.getElementById("kq");
+        function tim(){
+            let a=so1.value;
+            let b=so2.value;
+            while(a!=0){
+                    let temp=b%a;
+                    b=a;
+                    a=temp;
+            }
+            kq.value=b;
+        }
+        function huy(){
+            so1.value="";
+            so2.value="";
+            kq.value="";
+        }
+    </script>
+</body>
+</html>

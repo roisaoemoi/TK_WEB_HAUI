@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1 - Phieu 3</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .hept{
+            width:150px;
+            height:100px;
+            display:flex;
+        }
+        #ngoac{
+            font-size:80px;
+        }
+        .hept .pt{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giải Hệ Phương Trình Bậc Nhất 2 Ẩn</h1><br><br>
+    <div class="hept">
+        <p id="ngoac">{</p>
+        <div class="pt">
+            <p>ax + by = c</p>
+            <p>a'x + b'y = c'</p>
+        </div>
+    </div>
+    <br><br><br>
+    <h3>Nhập các hệ số</h3>
+    <br><br>Nhập a: <input type="text" placeholder="E.g. 0" id="a"><br><br>
+    Nhập b: <input type="text" placeholder="E.g. 0" id="b"><br><br>
+    Nhập c: <input type="text" placeholder="E.g. 0" id="c"><br><br>
+    Nhập a': <input type="text" placeholder="E.g. 0" id="a1"><br><br>
+    Nhập b': <input type="text" placeholder="E.g. 0" id="b1"><br><br>
+    Nhập c': <input type="text" placeholder="E.g. 0" id="c1"><br><br>
+    <button onclick="giai()">Giải</button><br><br>
+
+    <div id="giai">
+
+    </div>
+    <script>
+        function giai()
+        {
+
+            let a=parseFloat(document.getElementById("a").value);
+            let b=parseFloat(document.getElementById("b").value);
+            let c=parseFloat(document.getElementById("c").value);
+            let a1=parseFloat(document.getElementById("a1").value);
+            let b1=parseFloat(document.getElementById("b1").value);
+            let c1=parseFloat(document.getElementById("c1").value);
+
+            let A=a, A1=a1;
+
+            let giai=document.getElementById("giai");
+            if(isNaN(a)||isNaN(b)||isNaN(c)||isNaN(a1)||isNaN(b1)||isNaN(c1))
+            {
+                giai.innerHTML="Bộ số a, b, c, a', b', c' không hợp lệ. Xin kiểm tra lại!";
+            }
+            var D = a * b1 - b * a1;
+            var Dx = c * b1 - b * c1;
+            var Dy = a * c1 - c * a1;
+
+            if(D == 0){
+                if(Dx + Dy == 0)
+                    giai.innerHTML = "Hệ phương trình có vô số nghiệm";
+                else 
+                    giai.innerHTML = "Hệ phương trình vô nghiệm";
+            }else{
+                var x = Dx / D;
+                var y = Dy / D;
+                giai.innerHTML = "Hệ phương trình có cặp nghiệm: x = " + x + ", y = " + y;
+            }
+
+        
+        }
+    </script>
+</body>
+</html>

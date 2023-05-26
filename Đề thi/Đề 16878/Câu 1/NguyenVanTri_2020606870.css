@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    width:100%;
+    height:50px;
+    background-color: black;
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    width:15%;
+    height:20px;
+}
+
+.header--input{
+    width:27%;
+    height:35px;
+    margin-left:13px;
+    margin-right:13px;
+}
+
+.header--icon{
+    width:7%;
+    height:100%;
+    background-color: yellow;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header--icon img{
+    width:50%;
+}
+
+.header--icon:hover{
+    background-color: white;
+    color:red;
+}
+
+
+.main{
+    margin-top:10px;
+    display:flex;
+}
+
+.menu{
+    width:15%;
+    height:450px;
+}
+.menu--title{
+    background-color: #336699 !important;
+    color:white !important;
+}
+.menu div{
+    width:100%;
+    height:50px;
+    background-color: #CCCCCC;
+    color:black;
+    border:1px dotted black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menucha{
+    position: relative;
+}
+.menu div:hover{
+    color: #FFFF33;
+}
+
+.menucon{
+    width:100%;
+    height:250px !important;
+    z-index: 1;
+    background-color: white;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:-300%;
+    left:100%;
+    display:none !important;
+}
+.menucon div {
+    width:100%;
+    height:50px;
+}
+.menucon a{
+    color:black !important;
+    text-decoration:none;
+}
+
+.menucha:hover .menucon{
+    display:flex !important;
+}
+
+.content{
+    width:84%;
+    display:flex;
+    flex-direction: column;
+}
+
+.content--nav{
+    background-color: #CCCCCC;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content--nav div{
+    margin:10px;
+}
+
+.content--content{
+    display:flex;
+    flex-wrap: wrap;
+}
+.pc{
+    width:25%;
+    height:300px;
+    padding:10px;
+    border:1px solid gray;
+    display:flex;
+    flex-direction: column;
+}
+.ed{
+    color:black !important;
+    text-decoration: line-through;
+    display:flex;
+}
+.khuyenmai{
+    margin-left:5px;
+    background-color: #00CC33;
+    color:white !important;
+}
+.now{
+    margin-top:2px;
+    color:red;
+}
+.text:hover{
+    color:red !important;
+}
+
+

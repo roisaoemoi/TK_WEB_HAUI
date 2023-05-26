@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:80%;
+            margin-left:10%;
+        }
+        .container div{
+            display:flex;
+            align-items: center;
+            width:50%;
+            margin-left:25%;
+        }
+        input{
+            height:25px !important;
+        }
+        .button{
+            margin-left:35% !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Nhập số nguyên : </h3>
+            <input id="input" ></input>
+        </div>
+        <div>
+            <h3>Số chữ số lẻ : </h3>
+            <input id="output"></input>
+        </div>
+        <div class="button">
+            <button onclick="dem()">Đếm</button>
+            <button onclick="huy()">Huy bo</button>
+        </div>
+    </div>
+    <script>
+        let soNguyen=document.getElementById("input");
+        function dem(){
+            let so=soNguyen.value.split("");
+            let k=0;
+            for(let i=0;i<so.length;i++){
+                if(so[i]%2==1){
+                    k++;
+                }
+            }
+            document.getElementById("output").value=k;
+        }
+        function huy(){
+            soNguyen.value="";
+        }
+    </script>
+</body>
+</html>

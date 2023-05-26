@@ -1,0 +1,24 @@
+.container{
+    width:60%;
+    margin-left:20%;
+    background-color: #A06D21;
+    background-image: url('./cover.jpg');
+    background-position: center center;
+    background-size: 30% 300px;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+    padding: 20px 10px;
+    font-family: Tahoma;
+}
+
+h2{
+    margin-top:16px;
+    color: #FFCC00;
+    text-align: center;
+    list-style:none;
+}
+
+p{
+    color: #FFFF;
+}
+

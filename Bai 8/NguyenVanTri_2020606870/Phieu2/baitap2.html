@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 - Phieu 2</title>
+    <style>
+        button{
+            width:50px;
+            height:50px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <button onclick="sub(1)">1</button>
+        <button onclick="sub(2)">2</button>
+        <button onclick="sub(3)">3</button>
+        <button onclick="sub(4)">4</button>
+        <button onclick="sub(5)">5</button>
+        <button onclick="tru()">-</button>
+        <br>
+        <button onclick="sub(6)">6</button>
+        <button onclick="sub(7)">7</button>
+        <button onclick="sub(8)">8</button>
+        <button onclick="sub(9)">9</button>
+        <button onclick="sub(0)">0</button>
+        <button onclick="showkq()">=</button>
+        <br><br>
+        <strong id="kq">Kết quả: </strong>
+    </div>
+    <script>
+        //a+b=sub
+        let A=0, B=0, a=0,b=0;
+        let Tru=false;
+        let kq=document.getElementById("kq");
+        function sub(c)
+        {
+            
+            if(Tru==false)
+            {
+                A=1;
+                a=a*10+c;
+                kq.innerHTML="Kết quả: "+a;
+            }
+            else
+            {
+                B=1;
+                b=b*10+c;
+                kq.innerHTML="Kết quả: "+a+" - "+b;
+            }
+        }
+        function tru()
+        {
+            if(A!=0 && Tru==false)
+            {
+                Tru=true;
+                kq.innerHTML="Kết quả: "+a+" - ";
+            }
+        }
+        function showkq()
+        {
+            if(B!=0)
+            {
+                kq.innerHTML="Kết quả: "+a+" - "+b+" = "+Number(a-b);
+		        A=0;
+		        B=0;
+                a=0;
+                b=0;
+                Tru=false;
+            }
+        }
+    </script>
+</body>
+</html>

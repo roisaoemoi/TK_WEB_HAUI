@@ -1,0 +1,22 @@
+.container{
+    width: 44%;
+    margin-left: 28%;
+    background-color:  #FFD2FF;
+    padding: 20px 8px;
+}
+
+h1{
+    text-align: center;
+    color:  #4CAF50;
+}
+
+p{
+    text-indent: 50px;
+    text-align: justify;
+    word-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: #008CBA;
+}

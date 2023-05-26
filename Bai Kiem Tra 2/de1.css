@@ -1,0 +1,94 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.header, .footer{
+    width:100%;
+    height:50px;
+    background-color: blue;
+    color:white;
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width:25%;
+    height:300px;
+}
+.menu1{
+    width:100%;
+    height:50px;
+    background-color: rgb(172,35,49);
+    color:white;
+    display:flex;
+    align-items: center;
+    border:1px solid white;
+}
+.menucha{
+    position: relative;
+}
+.menucon{
+    width:100%;
+    height:150px;
+    position:absolute;
+    top:0%;
+    left:100%;
+    display:none;
+}
+.menucon div{
+    width:100%;
+    height:50px;
+    background-color: rgb(172,35,49);
+    color:white;
+    display:flex;
+    align-items: center;
+    border:1px solid white;
+}
+.menu1:hover,.menucon div:hover{
+    background-color: red;
+    color:yellow;
+}
+
+
+.menucha:hover .menucon{
+    display: block;
+}
+
+.section{
+    width:60%;
+    height:250px;
+    margin-left:10%;
+    margin-top:25px;
+    background-color: blue;
+    border-radius:10px;
+    color:white;    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section form{
+    width:100%;
+    height:60%;
+    display:flex;
+    justify-content:space-between;
+}
+.text{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.textbox{
+    width:60%;
+    display:flex;
+    flex-direction:column;
+}
+.textbox .box{
+    width:60%;
+}

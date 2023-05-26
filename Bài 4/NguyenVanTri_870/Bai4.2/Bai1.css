@@ -1,0 +1,26 @@
+
+
+.container{
+    width: 50%;
+    margin-left: 25%;
+}
+
+h2{
+    background-color: coral;
+    border-bottom: solid 4px black;
+}
+
+
+table{
+    border-collapse:collapse;
+    width:80%;
+}
+
+th{
+    background-color: coral;
+    color:white;
+}
+
+th, td{
+    border: solid 1px black;
+}

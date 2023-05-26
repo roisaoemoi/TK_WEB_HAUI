@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap 1</title>
+</head>
+<body>
+    <div align="center">
+        Ngày tháng năm sinh: 
+        <select name="date" id="date"></select>
+        <script>
+            let date=document.getElementById("date");
+            for(let i=1;i<=31;i++)
+            {
+                let getDate=document.createElement("option");
+                getDate.value=i;
+                getDate.innerHTML=i;
+                date.append(getDate);
+            }
+        </script>
+        tháng 
+        <select name="month" id="month"></select>
+        <script>
+            let month=document.getElementById("month");
+            for(let i=1;i<=12;i++)
+            {
+                let getMonth=document.createElement("option");
+                getMonth.value=i;
+                getMonth.innerHTML=i;
+                month.append(getMonth);
+            }
+        </script>
+        năm 
+        <select name="year" id="year"></select>
+        <script>
+            let year=document.getElementById("year");
+            for(let i=1900;i<=2022;i++)
+            {
+                let getYear=document.createElement("option");
+                getYear.value=i;
+                getYear.innerHTML=i;
+                year.append(getYear);
+            }
+        </script>
+    </div>
+</body>
+</html>

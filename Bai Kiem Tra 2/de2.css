@@ -1,0 +1,100 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.header,.footer{
+    width:100%;
+    height:50px;
+    background-color: blue;
+    font-size: 20px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.menu{
+    background-color:rgb(172,35,49);
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    font-size: 18px;
+}
+.menu1{
+    width:12%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(172,35,49);
+    color:white;
+    padding:5px 0px;
+}
+
+.menucha{
+    position:relative;
+}
+.menucon{
+    width:200%;
+    background-color:rgb(172,35,49);
+    position:absolute;
+    top:100%;
+    left:0%;
+    color:white;
+    display:none;
+}
+
+.menucon div{
+    width:100%;
+    background-color:rgb(172,35,49);
+    color:white;
+}
+
+.menu1:hover, .menucon div:hover{
+    background-color:red;
+    color:yellow;
+}
+.menucha:hover .menucon{
+    display:block;
+}
+
+.section{
+    background-color:blue;
+    padding:5px 0px;
+    width:55%;
+    margin-left:10%;
+    margin-top:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+}
+.section form{
+    width:100%;
+    background-color:blue;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    border-radius:10px;
+}
+
+.text{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+
+.textbox{
+    width:60%;
+    display:flex;
+    flex-direction:column;
+}
+
+#hoten, #diachi{
+    width:60%;
+}
+.section button{
+    width:14%;
+    margin-left:43%;
+}

@@ -1,0 +1,31 @@
+.container{
+    width: 50%;
+    margin-left:25%;
+    display: flex;
+}
+
+.ctxh:hover, .tg:hover, .gd:hover, .nst:hover, .kt:hover{
+    background-color: red;
+}
+
+.ctxh{
+    width:30%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.tg, .gd,.kt{
+    width:15%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.nst{
+    width:25%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+

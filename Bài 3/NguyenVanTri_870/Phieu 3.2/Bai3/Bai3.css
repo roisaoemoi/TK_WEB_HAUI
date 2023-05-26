@@ -1,0 +1,32 @@
+.container{
+    width: 50%;
+    margin-left:25%;
+    line-height:1px;
+    
+}
+
+h2{
+    text-align: center;
+    color: green;
+}
+
+.title{
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+.vonglap{
+    height:100px;
+    color: #0000CC;
+    background-color: #CCCCCC;
+    padding: 0.1px;
+}
+
+.for, .next{
+    text-indent:30%;
+}
+
+
+.tong{
+    text-indent: 50%;
+}

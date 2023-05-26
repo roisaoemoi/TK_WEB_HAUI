@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1 - Phieu 2</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Phương Trình Bậc 2</h2>
+        <h3>ax<sup>2</sup> + bx + c = 0</h3>
+        <h3>Nhập các giá trị để giải</h3>
+        Nhập a: <input type="text" placeholder="Eg. 0" id="a"><br><br>
+        Nhập b: <input type="text" placeholder="Eg. 0" id="b"><br><br>
+        Nhập c: <input type="text" placeholder="Eg. 0" id="c"><br><br>
+        <button onclick="giai()">Giải Phương Trình</button>
+        <br><br>
+        <div id="giai" style="display: block;">
+
+        </div>
+    </div>
+    
+
+    <script>
+        function giai()
+        {
+            let a=parseFloat(document.getElementById("a").value);
+            let b=parseFloat(document.getElementById("b").value);
+            let c=parseFloat(document.getElementById("c").value);
+            console.log(a);
+            let giai=document.getElementById("giai");
+            if(isNaN(a)|| isNaN(b) || isNaN(c))
+            {
+                giai.innerHTML="Bộ số a, b, c không hợp lệ. Xin kiểm tra lại!";
+            }
+            else
+            {
+                if(a==0)
+                {
+                    if(b==0)
+                    {
+                        if(c==0)
+                        {
+                            giai.innerHTML="\n\nPhương trình có vô số nghiệm!";
+                        }
+                        else 
+                        {
+                            giai.innerHTML="\n\nPhương trình vô nghiệm!";
+                        }
+                    }
+                    else
+                    {
+                        giai.innerHTML=`\n\n Phương trình có nghiệm duy nhất x= `+(-c)/b;
+                    }
+                }
+                else
+                {
+                    let denta= b*b-4*a*c;
+                    if(denta<0)
+                    {
+                        giai.innerHTML="Phương trình vô nghiệm!";
+                    }
+                    else
+                    {
+                        if(denta==0)
+                        {
+                            giai.innerHTML=`Phương trình có nghiệm kép x<sub>1</sub>=x<sub>2</sub>= `+ (-b)/(2*a);
+                        }
+                        else
+                        {
+                            giai.innerHTML=`Phương trình có 2 nghiệm phân biệt x<sub>1</sub>= `+Math.floor(1000*(-b+Math.sqrt(denta))/(2*a),5)/1000+` và x<sub>2</sub>= `+Math.floor(1000*(-b-Math.sqrt(denta))/(2*a))/1000;   
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

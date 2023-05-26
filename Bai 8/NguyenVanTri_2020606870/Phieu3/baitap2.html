@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2- Phieu 3</title>
+</head>
+<body>
+    <h3>JavaScript có thể kiểm soát form</h3>
+    <p>Hãy nhập số vào hộp text (từ 1 đến 10):</p>
+    <input type="text" placeholder="E.g. 6" id="a" oninput="none()">
+    <button onclick="submit()">Submit</button><br><br>
+    <div id="dulieu">
+
+    </div>
+
+    <script>
+        function none()
+        {
+            let dulieu=document.getElementById("dulieu");
+            dulieu.style.display="none";
+        }
+        function submit()
+        {
+            let dulieu=document.getElementById("dulieu");
+            dulieu.style.display="block";
+            let a=parseFloat(document.getElementById("a").value);
+            if(isNaN(a))
+            {
+                dulieu.innerHTML="Dữ liệu không đúng";
+            }
+            else
+            {
+                if(a<1 || a>10)
+                {
+                    dulieu.innerHTML="Dữ liệu không đúng";
+                }
+                else
+                {
+                    dulieu.innerHTML="Dữ liệu đúng";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

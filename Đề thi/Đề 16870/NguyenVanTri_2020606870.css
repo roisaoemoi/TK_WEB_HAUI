@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #336699;
+    height: 50px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.header img{
+    height:30px;
+}
+
+.search{
+    width:60%;
+    background-color: white;
+    height:35px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.categories{
+    width:25%;
+    height:80%;
+    border:0;
+}
+.inputsearch{
+    width:65%;
+    height:80%;
+    border:0;
+}
+.cart{
+    width:10%;
+    height:100%;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart a{
+    text-decoration: none;
+    color:white;
+}
+
+.menu--content{
+    margin-top: 10px;
+    display:flex;
+}
+
+.menu{
+    width:15%;
+    height:600px;
+    border: 1px solid #336699;
+}
+.menu div{
+    width:100%;
+    height:50px;
+    background-color:white;
+    color:black;
+    border:1px solid gray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.allcategories{
+    background-color: #336699 !important;
+    color:white !important;
+}
+
+.menu div:hover{
+    color:#336699;
+}
+
+.menucha{
+    position:relative;
+}
+
+.menucon{
+    background-color: white;
+    width:100%;
+    height:150px !important;
+    position:absolute;
+    left:100%;
+    top:0%;
+    display:flex;
+    flex-direction:column;
+    display:none !important;
+    z-index: 1;
+}
+
+.menucon  a{
+    height:25px; 
+    text-decoration: none;
+    color:black;
+    background-color: white;
+}
+.menucha:hover .menucon{
+    display:flex !important;
+}
+
+.content{
+    width:84%;
+    margin-left:1%;
+}
+.contentnav{
+    background-color: gray;
+    color:black;
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentnav div{
+    margin-left:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentnav select{
+    border:0;
+    height:50%;
+    margin-right:10px;
+}
+
+
+.content--content{
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:10px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap
+}
+
+
+.pc{
+    margin-top:10px;
+    width:15%;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+.pc img{
+    width:100%;
+    height:100px;
+}
+.text{
+    margin-top:5px;
+}
+.text:hover{
+    color:red;
+}
+.price_u{
+    margin-top:5px;
+    display:flex;
+    justify-content: space-between;
+}
+.price{
+    display:flex;
+    flex-direction: column;
+}
+.now{
+    color:red;
+}
+
+.u{
+    width:35px;
+    height:25px;
+    border:1px solid red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pc--u{
+    background-color: white;
+    width:300%;
+    position:absolute;
+    top:0%;
+    left:100%;
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    display:none;
+    z-index: 1;
+}
+.u:hover .pc--u{
+    display:flex !important;
+}
+
+.pc--u--nav{
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items: center;
+}
+.center{
+    width:95%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc--u--content{
+    height:100px;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.now span{
+    color:black;
+}
+.pc--u--content img{
+    width:20%;
+    height:40%;
+}
+.txt{
+    width:60%;
+}
+
+.pc--u--continue{
+    margin-top:5px;
+    margin-bottom:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tong{
+    width:96%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.giohang--datmua{
+    margin-top:5px;
+    margin-bottom:5px;
+    width:85%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.giohang{
+    width:45%;
+    height:30px;
+    background-color: chocolate;
+    color:white;
+}
+
+.datmua{
+    width:45%;
+    height:30px;
+    background-color: red;
+    color:white;
+}
+

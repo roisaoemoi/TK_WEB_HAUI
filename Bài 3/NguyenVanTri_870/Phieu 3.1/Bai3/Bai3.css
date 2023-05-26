@@ -1,0 +1,30 @@
+.container{
+    width:50%;
+    margin-left:25%;
+}
+
+.header{
+    text-align: center;
+    color:#FF3399;
+    background-color:#FECFFD;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.content{
+    background-color: #FFFFCC;
+    text-align: center;
+    font-style: italic;
+}
+
+.tho1{
+    color: blue;
+}
+
+.tho2{
+    color: red;
+}
+
+.tho3{
+    color: green;
+}
